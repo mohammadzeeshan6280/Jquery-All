@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leran jQuery</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #box {
+            background: rgba(87, 21, 21, 0.459);
+            border: 2px solid green;
+            padding: 10px;
+        }
+
+        #test {
+            background: pink;
+            padding: 5px;
+        }
+        .red{
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>jQuery wrapAll() & wrapInner()</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quis sit dicta tempore quibusdam ullam officiis unde nihil hic iure.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, dolor voluptatibus culpa numquam quidem possimus!</p>
+    <br>
+    <button id="wrapAllBtn">WrapAll</button>
+    <button id="wrapInnerBtn">WrapInner</button>
+
+    <script src="jqurey.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#wrapAllBtn').click(function(){
+                $('p').wrapAll('<div id="test"></div>')
+            });
+        })
+
+        $(document).ready(function(){
+            $('#wrapInnerBtn').click(function(){
+                $('h1').wrapInner('<span class="red"></span>')
+            });
+        })
+    </script>
+
+</body>
+
+</html>

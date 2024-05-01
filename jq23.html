@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leran jQuery</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #box {
+            background: rgba(87, 21, 21, 0.459);
+            border: 10px solid green;
+            margin: 20px;
+            padding: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>jQuery Width & Height Methods</h1>
+    <div id="box">
+        <h2>Test Box</h2>
+        <p>Lorem, ipsum dolor Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+            necessitatibus. dolor sit amet. sit amet consectetur adipisicing elit. Officia, quam.</p>
+    </div>
+
+    <button id="widthBtn">Width</button>
+    <button id="heightBtn">Height</button>
+
+    <script src="jqurey.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#widthBtn').click(function () {
+                $('#box').width("400px")
+
+                console.clear()
+                console.log("Width : " + $('#box').width());
+                console.log("InenerWidth : " + $('#box').innerWidth());
+                console.log("OuterWidth : " + $('#box').outerWidth());
+                console.log("OuterWidth(true) : " + $('#box').outerWidth(true));
+            });
+        })
+
+        $(document).ready(function () {
+            $('#heightBtn').click(function () {
+                $('#box').height("500px")
+
+                console.clear()
+                console.log("Height : " + $('#box').height());
+                console.log("InenerHeight : " + $('#box').innerHeight());
+                console.log("OuterHeight : " + $('#box').outerHeight());
+                console.log("OuterHeight(true) : " + $('#box').outerHeight(true));
+            });
+        })
+    </script>
+
+</body>
+
+</html>

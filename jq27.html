@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leran jQuery</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #box {
+            background: rgba(216, 22, 22, 0.459);
+            border: 2px solid rgb(143, 167, 143);
+            width: 350px;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>jQuery Hide & Show Methods</h1>
+    <div id="box" class="">
+        <h2 class="test abc xyz">Test Box</h2>
+        <!-- <h2>Test Box</h2> -->
+        <p>Lorem, ipsum dolor Lorem <span>Lorem ipsum dolor sit amet.</span> ipsum Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Nostrum,</p>
+    </div>
+    <br>
+    <button id="hideBtn">Hide</button>
+    <button id="showBtn">Show</button>
+    <button id="toggleBtn">Toggle</button>
+    <script src="jqurey.js"></script>
+
+    <script>
+        // $(document).ready(function(){
+        //     $('#hideBtn').click(function (){
+        //         $('#box').hide();
+        //     })
+        // })
+
+        // $(document).ready(function(){
+        //     $('#showBtn').click(function (){
+        //         $('#box').show();
+        //     })
+        // })
+
+        // $(document).ready(function(){
+        //     $('#hideBtn').click(function (){
+        //         $('#box p').hide();
+        //     })
+        // })
+
+        // $(document).ready(function(){
+        //     $('#showBtn').click(function (){
+        //         $('#box p').show();
+        //     })
+        // })
+
+        // $(document).ready(function(){
+        //     $('#hideBtn').click(function (){
+        //         $('#box').hide("slow");
+        //     })
+        // })
+
+        // $(document).ready(function(){
+        //     $('#showBtn').click(function (){
+        //         $('#box').show("slow");
+        //     })
+        // })
+
+        // $(document).ready(function(){
+        //     $('#hideBtn').click(function (){
+        //         $('#box').hide("fast");
+        //     })
+        // })
+
+        // $(document).ready(function(){
+        //     $('#showBtn').click(function (){
+        //         $('#box').show("fast");
+        //     })
+        // })
+
+        // $(document).ready(function(){
+        //     $('#hideBtn').click(function (){
+        //         $('#box').hide(3000); // 3 sec
+        //     })
+        // })
+
+        // $(document).ready(function(){
+        //     $('#showBtn').click(function (){
+        //         $('#box').show(1000);
+        //     })
+        // })
+
+        // $(document).ready(function () {
+        //     $('#hideBtn').click(function () {
+        //         $('#box').hide(1000, function () {
+        //             console.log("Now it is hidden ")
+
+        //         });
+        //     })
+        // })
+
+        // $(document).ready(function () {
+        //     $('#showBtn').click(function () {
+        //         $('#box').show(1000, function () {
+        //             console.log("Now it is show ")
+
+        //         })
+        //     });
+        // })
+
+        //  $(document).ready(function () {
+        //     $('#showBtn').click(function () {
+        //         $('#box').show(1000, function () {
+        //             console.log("Now it is hidden ")
+
+        //         });
+        //     })
+        // })
+
+        $(document).ready(function () {
+            $('#toggleBtn').click(function () {
+                $('#box').toggle(1000, function () {
+                    console.log("Hey Toggle")
+
+                })
+            });
+        })
+
+      
+
+        
+
+
+    </script>
+
+</body>
+
+</html>

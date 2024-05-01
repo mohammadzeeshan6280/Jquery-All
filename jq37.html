@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #first{
+            background-color: tomato;
+            border: 2px solid red;
+            width: 70vw;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>jQuery has() & is() Methods</h1>
+
+    <div id="first">
+        <p>Lorem ipsum dolor sit amet <b>consectetur adipisicing</b> elit. Exercitationem, quis?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, iure!</p>
+    </div>
+
+    <ul>
+        <li>Orange</li>
+        <li><span>Apple</span></li>
+        <li>Banana</li>
+        <li>Grapes</li>
+    </ul>
+
+        <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, tempore!</p>
+        <p>Lorem ipsum dolor sit <span class="test"> amet consectetur adipisicing elit. Corporis, neque </span>Lorem ipsum dolor sit amet.</p>
+  
+</body>
+<script src="/jqurey.js"></script>
+<script>
+    $(document).ready(function(){
+        // $('p').has('span').css('background', 'gold')
+        // $('p').has('b').css('background', 'gold')
+        // $('p').has('b,span').css('background', 'gold')
+        // $('li').has('b,span').css('background', 'gold')
+        // $('p').has('.test').css('background', 'gold')
+    })
+
+    $(document).ready(function(){
+        $('p').click(function(){
+            if($(this).parent().is('div')){
+       $(this).css('background', 'gold')
+       }
+        });
+       
+    });
+</script>
+</html>

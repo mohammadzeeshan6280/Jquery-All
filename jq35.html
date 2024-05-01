@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leran jQuery</title>
+
+    <style>
+ #main-outer{
+            width: 600px;
+            height: 500px;
+            background: grey;
+            border: 2px solid black;
+            padding-left: 20px;
+  
+        }
+
+        #outer{
+            width: 550px;
+            height: 400px;
+            background: pink;
+            border: 2px solid blue;
+            box-sizing: border-box;
+            padding-left: 20px;
+          
+            
+        }
+
+        #inner{
+            width: 450px;
+            height: 250px;
+            background: khaki;
+            border: 2px solid rebeccapurple;
+            box-sizing: border-box;
+         
+        }
+
+       #inner div{
+        background: rebeccapurple;
+      float: left;
+      padding: 25px;
+      margin: 10px;
+
+       }
+
+    </style>
+
+</head>
+
+<body>
+    <h1>jQuery siblings Methods</h1>
+
+    <div id="main-outer">
+    <h2>Main Outer</h2>
+    <div id="outer">
+        <h2>Outer</h2>
+        <div id="inner">
+            <h2>Inner</h2>
+            <div class="test">A</div>
+            <div>B</div>
+            <div id="child-C">C</div>
+            <div>D</div>
+            <div class="test">E</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="jqurey.js"></script>
+
+    <script>
+        // $(document).ready(function () {
+        //     $('#child-C').siblings().css('background', 'red')
+        // })
+
+        // $(document).ready(function () {
+        //     $('#child-C').siblings('h2').css('background', 'red')
+        // })
+
+        // $(document).ready(function () {
+        //     $('#child-C').siblings('.test').css('background', 'red')
+        // })
+
+        // $(document).ready(function () {
+        //     $('#child-C').next().css('background', 'red')
+        // })
+
+        // $(document).ready(function () {
+        //     $('#child-C').prev().css('background', 'red')
+        // })
+
+        // $(document).ready(function () {
+        //     $('#child-C').prevAll().css('background', 'red')
+        // })
+
+        // $(document).ready(function () {
+        //     $('#child-C').nextAll().css('background', 'red')
+        // })
+
+        // $(document).ready(function () {
+        //     $('#child-C').nextUntil('.test').css('background', 'red')
+        // })
+
+        $(document).ready(function () {
+            $('#child-C').prevUntil('.test').css('background', 'red')
+        })
+    </script>
+
+</body>
+
+</html>

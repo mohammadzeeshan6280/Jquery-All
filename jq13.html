@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leran jQuery</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #box {
+            /* background-color: green; */
+            padding: 10px;
+            border: 2px solid rgb(233, 187, 187);
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>jQuery CSS Methods</h1>
+    <div id="box">
+        <h2>Text Box</h2>
+        <p>Lorem ipsum dolor <span>Lorem ipsum dolor sit amet.</span> sit amet consectetur adipisicing elit. Possimus non illo repudiandae eaque in illum
+            reiciendis fugiat repellendus eos. Magni?</p>
+    </div>
+    <br>
+    <button id="stylebutton">Add Style</button>
+
+    <script src="jqurey.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#stylebutton').click(function(){
+                // $('#box').css("background", "purple")
+                
+                $('#box').css({"background": "purple", "color": "red", "border": "5px dotted green"});
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

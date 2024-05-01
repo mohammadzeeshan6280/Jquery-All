@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leran jQuery</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #box {
+            background: rgba(216, 22, 22, 0.459);
+            border: 2px solid rgb(143, 167, 143);
+            width: 350px;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>jQuery Hide & Show Methods</h1>
+    <div id="box" class="">
+        <h2 class="test abc xyz">Test Box</h2>
+        <!-- <h2>Test Box</h2> -->
+        <p>Lorem, ipsum dolor <span>Lorem, ipsum dolor.</span> Lorem ipsum Lorem ipsum dolor sit amet</p>
+    </div>
+    <br>
+    <button id="slideUpBtn">slideUp</button>
+    <button id="slideDownBtn">sildeDown</button>
+    <button id="slideToggleBtn">sildeToggle</button>
+    <script src="jqurey.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#slideUpBtn').click(function (){
+                // $('#box').slideUp();
+                $('#box').slideUp("slow");
+                // $('#box').slideUp("fast");
+                // $('#box').slideUp(2000);
+                $('#box').slideUp(2000,function(){
+                    console.log("Now it is Hidden")
+                });
+            })
+        })
+
+        $(document).ready(function(){
+            $('#slideDownBtn').click(function (){
+                // $('#box').slideDown();
+                $('#box').slideDown("slow");
+                // $('#box').slideDown("fast");
+                // $('#box').slideDown(3000);
+                $('#box').slideDown(3000,function(){
+                    console.log("Now it is Show")
+                });
+            })
+        })
+
+        $(document).ready(function(){
+            $('#slideToggleBtn').click(function (){
+                // $('#box').slideToggle(1000);
+                $('#box').slideToggle(1000,function(){
+                    console.log("Hey Toggle Slide")
+                });
+            })
+        })
+      
+      
+    </script>
+
+</body>
+
+</html>

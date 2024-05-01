@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn jQurey</title>
+    <style>
+        #text1{
+            background-color: aqua;
+            width: 200px;
+            padding: 50;
+            border: 2px solid red;
+            margin: 0px;
+            float: left;
+         
+        }
+        
+        #text2{
+            background-color: rgb(52, 138, 71);
+            width: 200px;
+            padding: 50;
+            border: 2px solid rgb(80, 39, 148);
+            margin: 0px;
+            float: right;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Yahoo Baba : jQurey Syntax</h1>
+    <div id="text1">
+        <h2>Text Box 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quia, error corrupti aspernatur dolorem, magni aperiam deleniti, recusandae obcaecati labore possimus. Alias cum aspernatur sunt qui velit possimus voluptate vitae!</p>
+    </div>
+
+    <div id="text2">
+        <h2>Text Box 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, odio, ipsum qui magni soluta nobis illo harum neque amet eaque commodi accusamus obcaecati voluptas deleniti rerum officia similique molestias distinctio.</p>
+    </div>
+    <script src="jqurey.js"></script>
+    <script>
+        $(document).ready(function(){
+           let a =  $('#text1').html()
+        //    let a =  $('#text1').text()
+           console.log(a);
+        })
+
+        $(document).ready(function(){
+           let b =  $('#text2').html()
+        //    let b =  $('#text2').text()
+           console.log(b);
+         })
+    </script>
+</body>
+</html>

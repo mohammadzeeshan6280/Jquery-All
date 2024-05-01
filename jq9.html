@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn jQurey</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #box{
+            width: 70%;
+            height: 200px;
+            background: pink;
+            padding: 10px;
+            border: 2px solid red;
+            overflow: auto;
+        }
+
+        #box h2{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>jQurey Window Event</h1>
+    <div id="box">
+        <h2>Test Box</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, dignissimos nesciunt magni similique architecto nemo ipsam amet, earum dolorem eligendi quam. A quidem fugit tempore nobis, cum alias adipisci? Sequi eligendi sed molestias porro officia nisi est, fugit facilis maiores autem labore mollitia nobis iusto sit culpa quidem id maxime inventore saepe placeat itaque vel numquam atque veniam? Qui consequatur sunt temporibus reiciendis. Vitae cupiditate, delectus molestias aliquid accusamus itaque reiciendis adipisci libero blanditiis quibusdam quam ut dolorem iste harum quis similique esse culpa veritatis architecto voluptatem ea? Aut ab sint debitis deleniti voluptates explicabo aperiam repudiandae, voluptatem ipsum odit culpa, accusamus cum nisi, quas nulla aspernatur dolores saepe laboriosam blanditiis est. Ducimus blanditiis voluptas hic modi, obcaecati in? Iusto omnis, accusantium natus placeat voluptatem fuga! Porro possimus necessitatibus, quam vel voluptatum magni architecto minus delectus, iste reprehenderit asperiores! Ad, esse sed. Sint suscipit reiciendis obcaecati odio iste dolorum iusto fuga. Illo nesciunt  </p>
+    </div>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum id, cupiditate alias consequuntur magni nulla iure laborum labore quis, ad quae! Facere maxime quam recusandae beatae numquam distinctio, impedit perspiciatis labore, quod est quidem dolor! Voluptate neque vero itaque impedit, perspiciatis atque iure totam nemo molestiae eveniet ratione illo deserunt quas excepturi. Rerum labore quisquam molestias, voluptatem ea fugit quis ipsa maxime deleniti error, dolorem impedit repellendus beatae mollitia dignissimos sed eveniet sint. Eligendi, enim! Nobis excepturi dolorum commodi pariatur voluptatum iure accusantium. Minima adipisci officiis tenetur rerum, dolore illo eos cumque mollitia architecto itaque ipsa molestias, deserunt quis! Inventore repellendus architecto explicabo accusantium soluta doloribus eaque iste aspernatur omnis! Aliquid nemo eos totam laudantium saepe, ullam vel animi blanditiis iure illo magnam reprehenderit, excepturi impedit accusantium pariatur nostrum molestiae! Quidem consequatur vero tempora saepe earum similique commodi optio. Atque ipsa animi officia corporis ullam, deleniti ratione. Amet itaque distinctio, labore, esse laboriosam nesciunt dolor aliquid quam voluptas iure qui eius pariatur. Quaerat, omnis! Veniam modi dicta ipsa? Suscipit, consectetur itaque nihil quae a, ab ducimus corporis voluptate nisi, pariatur obcaecati deleniti vel aut quisquam explicabo sequi. Magni cumque necessitatibus tenetur placeat autem in, quae qui velit praesentium distinctio ullam rem sequi optio ipsum deleniti ut totam perspiciatis voluptatum maxime! Ducimus, officia! Molestiae fugit earum deserunt tenetur laboriosam. Ad explicabo dolor deleniti obcaecati itaque vero, quaerat sed consequuntur? Pariatur asperiores nemo nostrum modi omnis corrupti soluta laborum nulla eius quibusdam architecto qui blanditiis, distinctio illum. Soluta voluptatibus fugit quidem nemo eveniet expedita et explicabo. Ipsam temporibus, cupiditate eum nemo nobis eaque rem ratione. Sint ipsam vel illum earum a, dicta rerum iste in dolorem sed odit excepturi unde rem quae eaque nam accusantium porro facilis consequatur ea dolor, id expedita! Esse quos ex dolore rem, voluptatem necessitatibus eum fugit eveniet.</p>
+    <script src="jqurey.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                console.log("You are scrolling")
+            })
+
+            $('#box').scroll(function(){
+                console.log("You are scrolling")
+            })
+
+            $(window).resize(function(){
+                console.log("You are resizing window")
+            })
+
+            // $(window).load(function(){
+            //     console.log("You are loading")
+            // })
+
+            // $(window).unload(function(){
+            //     console.log("You are unloading")
+            // })
+        })
+    </script>
+</body>
+
+
+</html>

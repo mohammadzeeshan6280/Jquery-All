@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leran jQuery</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #box {
+            background: rgba(216, 22, 22, 0.459);
+            border: 2px solid rgb(143, 167, 143);
+            width: 350px;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>jQuery Hide & Show Methods</h1>
+    <div id="box" class="">
+        <h2 class="test abc xyz">Test Box</h2>
+        <!-- <h2>Test Box</h2> -->
+        <p>Lorem, ipsum dolor Lorem ipsum Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Nostrum,</p>
+    </div>
+    <br>
+    <button id="fadeOutBtn">fadeOut</button>
+    <button id="fadeInBtn">fadeIn</button>
+    <button id="fadeToggleBtn">fadeToggle</button>
+    <button id="fadeToBtn">fadeTo</button>
+    <script src="jqurey.js"></script>
+
+    <script>
+        // $(document).ready(function(){
+        //     $('#fadeOutBtn').click(function (){
+        //         // $('#box').fadeOut();
+        //         // $('#box').fadeOut("slow");
+        //         // $('#box').fadeOut("fast");
+        //         $('#box').fadeOut(3000);
+        //     })
+
+        // $('#fadeInBtn').click(function (){
+        //         // $('#box').fadeIn();
+        //         // $('#box').fadeIn("slow");
+        //         // $('#box').fadeIn("fast");
+        //         $('#box').fadeIn(3000);
+        //     })
+        // })
+
+        // $(document).ready(function () {
+        //     $('#fadeOutBtn').click(function () {
+        //         $('#box').fadeOut(1000, function () {
+        //             console.log("Now it is Hidden ")
+
+        //         });
+        //     })
+
+        //     $('#fadeInBtn').click(function () {
+        //         $('#box').fadeIn(1000, function () {
+        //             console.log("Hey show")
+
+        //         })
+        //     });
+        // })
+        
+
+        // $(document).ready(function () {
+        //     $('#fadeToggleBtn').click(function () {
+        //         $('#box').fadeToggle(2000, function () {
+        //             console.log("Hey show")
+
+        //         })
+        //     });
+        // })
+
+        $(document).ready(function () {
+            $('#fadeToBtn').click(function () {
+                $('#box').fadeTo(2000,0.2 ) 
+
+                })
+            });
+
+        $(document).ready(function () {
+            $('#fadeToBtn').click(function () {
+                $('#box').fadeTo(2000, 0.2, function () {
+                    console.log("Now it is Show")
+
+                })
+            });
+        })
+
+      
+    </script>
+
+</body>
+
+</html>

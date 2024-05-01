@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn jQurey</title>
+
+    <style>
+        #box{
+            width: 400px;
+            height: 200px;
+            padding: 10px;
+            border: 2px solid red;
+            background-color: pink;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>jQurey Event.stopPropagation()</h1>
+    <div id="box">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente iusto incidunt quae ipsum porro dolor tenetur magni, quidem impedit omnis.</p>
+        <button>Test Button</button>
+    </div>
+
+    <script src="/jqurey.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#box').click(function(){
+                alert("The div element was clicked")
+            })
+            $('h2').click(function(){
+                alert("The h2 element was clicked")
+            })
+            // $('p').click(function(event){
+            //     event.stopPropagation();
+            //     alert("The p element was clicked")
+            // })
+            $('p').click(function(event){
+                // event.stopPropagation();
+                alert("The p element was clicked : " + event.isPropagationStopped());
+            })
+            $('button').click(function(){
+                alert("The button element was clicked")
+            })
+        })
+
+    </script>
+</body>
+</html>

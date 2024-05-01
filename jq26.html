@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leran jQuery</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #box {
+            background: rgba(216, 22, 22, 0.459);
+            border: 2px solid rgb(143, 167, 143);
+            width: 350px;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>jQuery hasClass Methods</h1>
+    <div id="box" class="">
+        <h2 class="test abc xyz">Test Box</h2>
+        <!-- <h2>Test Box</h2> -->
+        <p>Lorem, ipsum dolor Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+            necessitatibus. dolor sit amet. sit amet consectetur adipisicing elit. Officia, quam.</p>
+    </div>
+    <br>
+    <button id="hasclassBtn">hasClass</button>
+    <script src="jqurey.js"></script>
+
+    <script>
+        // $(document).ready(function(){
+        //     $('#hasclassBtn').click(function () {
+        //        console.log($('#box h2').hasClass('test'))
+                
+        //     });
+        // })
+
+        $(document).ready(function(){
+            $('#hasclassBtn').click(function () {
+               let a = ($('#box h2').hasClass('test'))
+
+               if(a == true){
+                console.log("Yes")
+               }
+               else{
+                console.log("No")
+
+               }
+
+                
+            });
+        })
+
+       
+    </script>
+
+</body>
+
+</html>

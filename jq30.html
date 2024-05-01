@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leran jQuery</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+
+        #box {
+            background: rgba(216, 22, 22, 0.459);
+            width: 100px;
+            height: 100px;
+            padding:70px;
+            border: 2px solid rgb(29, 184, 29);
+            position: relative;
+            margin-left: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>jQuery Animate Methods</h1>
+    <div id="box">Yahoo Baba</div>
+    <br>
+    <button id="animateBtn">Animate</button>
+    <script src="jqurey.js"></script>
+
+    <script>
+        //  $(document).ready(function(){
+        //     $('#animateBtn').click(function (){
+        //         $('#box').animate({
+        //             left : '150px',
+        //             // width : '100px'
+        //             // width : '+=100px',
+        //             // width : 'hide',
+        //             width : 'toggle',
+        //             fontSize : '25px',
+        //             borderWidth : '5px'
+        //         })
+        //     })
+        // })
+
+
+        $(document).ready(function(){
+            $('#animateBtn').click(function (){
+                // $('#box').animate({left : '150px'}); 
+
+                // $('#box').animate({left : '150px', fontSize : '25px'}); 
+
+                // $('#box').animate({left : '150px', fontSize : '25px'}, "fast"); 
+
+                // $('#box').animate({left : '150px', fontSize : '25px'},"slow");
+
+                // $('#box').animate({left : '150px', fontSize : '25px'},3000);
+
+
+                // $('#box').animate({left : '150px', fontSize : '25px'}, 3000,function(){
+                //     console.log("First Animation Completed")
+                // }); 
+                $('#box').animate({top : '150px'}); 
+                $('#box').animate({width : '250px'}); 
+                $('#box').animate({borderWidth : '10px'}); 
+             })
+            })
+
+      
+    </script>
+
+</body>
+
+</html>

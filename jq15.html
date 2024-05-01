@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leran jQuery</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            font-size: 25px;
+        }
+
+        #box {
+            background: rgb(93, 206, 93);
+            padding: 10px;
+            border: 2px solid rgb(122, 11, 11);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>jQuery Append & Prepend Methods</h1>
+    <div id="box">
+        <h2>Text Box</h2>
+        <p>Lorem ipsum dolor <span>Lorem ipsum dolor sit amet.</span> sit amet consectetur adipisicing elit. Possimus
+            non illo repudiandae eaque in illum
+            reiciendis fugiat repellendus eos. Magni?</p>
+    </div>
+    <ol>
+        <li> List Item 1</li>
+        <li> List Item 2</li>
+        <li> List Item 3</li>
+        <li> List Item 4</li>
+    </ol>
+    <br>
+    <button id="appendBtn">Append</button>
+    <button id="prependBtn">Prepend</button>
+
+    <script src="jqurey.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#appendBtn').click(function(){
+                $('#box').append("<h2> M2Z INFO </h2>")
+               
+            });
+
+            $('#prependBtn').click(function(){
+                $('#box').prepend("<h3> M2Z INFO </h3>")
+               
+            });
+
+            // $('#appendBtn').click(function(){
+            //     $('ol').append("<li> List Item new </li>")
+               
+            // });
+
+            // $('#prependBtn').click(function(){
+            //     $('ol').prepend("<li>New List Item</li>")
+               
+            // });
+        });
+
+    </script>
+
+</body>
+
+</html>
